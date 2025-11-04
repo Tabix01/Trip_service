@@ -38,42 +38,52 @@
   <body>
     <main>
       <header>
-  <nav class="desktop_nav">
-    <li><a href="index.html" class="navigation">Home</a></li>
-    <li><a href="About.html" class="navigation">About</a></li>
-    <li><a href="Partners.html" class="navigation">Partners</a></li>
-    <li><a href="support.html" class="navigation active">Support</a></li>
-  </nav>
+        <nav class="desktop_nav">
+          <li><a href="index.html" class="navigation">Home</a></li>
+          <li><a href="About.html" class="navigation">About</a></li>
+          <li><a href="Partners.html" class="navigation">Partners</a></li>
+          <li><a href="support.html" class="navigation active">Support</a></li>
+        </nav>
 
-  <div id="hamburger_icon"></div>
+        <div id="hamburger_icon"></div>
 
-  <nav id="mobile_menu">
-    <li><a href="index.html" class="navigation">Home</a></li>
-    <li><a href="About.html" class="navigation">About</a></li>
-    <li><a href="Partners.html" class="navigation">Partners</a></li>
-    <li><a href="support.html" class="navigation active">Support</a></li>
-  </nav>
-</header>
+        <nav id="mobile_menu">
+          <li><a href="index.html" class="navigation">Home</a></li>
+          <li><a href="About.html" class="navigation">About</a></li>
+          <li><a href="Partners.html" class="navigation">Partners</a></li>
+          <li><a href="support.html" class="navigation active">Support</a></li>
+        </nav>
+      </header>
       <section id="support">
         <div class="bg"></div>
-        <h1>Support</h1>
+        <h1 data-aos="fade-up" data-aos-delay="150">Support</h1>
       </section>
       <article class="support_text">
-        <h2>Need help? We're here for you — every step of your journey.</h2>
-        <p>
+        <h2 data-aos="fade-up" data-aos-delay="150">Need help? We're here for you — every step of your journey.</h2>
+        <p data-aos="fade-up" data-aos-delay="150">
           At TTM, our support team is dedicated to making your travel experience
           smooth and worry-free. Whether you have questions about booking a
           flight, managing your trip, or exploring new destinations, we're
           always ready to assist.
         </p>
-        <p>
-          You can reach us through: <br> 📧 Tabix01.com <br>🕒 Available:
-          Monday-Friday, 9:00-18:00
+        <p data-aos="fade-up" data-aos-delay="150">
+          You can reach us through: <br />
+          📧 Tabix01.com <br />🕒 Available: Monday-Friday, 9:00-18:00
         </p>
       </article>
-      <img src="gallery/can'ttakeitanymore.webp" alt="">
+      <img src="gallery/can'ttakeitanymore.webp" alt="" />
     </main>
-   <script src="main.js">
+    <script src="main.js"></script>
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 1000, // длительность анимации
+        once: true, // проигрывать один раз
+        offset: 100, // когда начинать анимацию
+      });
     </script>
   </body>
 </html>

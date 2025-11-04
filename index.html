@@ -21,29 +21,29 @@
   <body>
     <main>
       <header>
-  <nav class="desktop_nav">
-    <li><a href="" class="navigation active">Home</a></li>
-    <li><a href="About.html" class="navigation">About</a></li>
-    <li><a href="Partners.html" class="navigation">Partners</a></li>
-    <li><a href="support.html" class="navigation">Support</a></li>
-  </nav>
+        <nav class="desktop_nav">
+          <li><a href="" class="navigation active">Home</a></li>
+          <li><a href="About.html" class="navigation">About</a></li>
+          <li><a href="Partners.html" class="navigation">Partners</a></li>
+          <li><a href="support.html" class="navigation">Support</a></li>
+        </nav>
 
-  <div id="hamburger_icon"></div>
+        <div id="hamburger_icon"></div>
 
-  <nav id="mobile_menu">
-    <li><a href="" class="navigation active">Home</a></li>
-    <li><a href="About.html" class="navigation">About</a></li>
-    <li><a href="Partners.html" class="navigation">Partners</a></li>
-    <li><a href="support.html" class="navigation">Support</a></li>
-  </nav>
-</header>
+        <nav id="mobile_menu">
+          <li><a href="" class="navigation active">Home</a></li>
+          <li><a href="About.html" class="navigation">About</a></li>
+          <li><a href="Partners.html" class="navigation">Partners</a></li>
+          <li><a href="support.html" class="navigation">Support</a></li>
+        </nav>
+      </header>
       <section id="sec1">
         <div class="bg"></div>
         <h1>EXPLORE</h1>
         <div class="articleWrapper">
           <article>
-            <button>Book Now</button>
-            <p>
+            <button data-aos="fade-up" data-aos-delay="100">Book Now</button>
+            <p data-aos="fade-up" data-aos-delay="0">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
               nostrum fugit vitae ducimus sapiente magnam quam, totam non velit
               necessitatibus asperiores ipsa eum placeat? Lorem ipsum dolor sit
@@ -54,7 +54,7 @@
         </div>
       </section>
       <section id="sec2">
-        <article>
+        <article data-aos="fade-up" data-aos-delay="0">
           <h2>Discover Your Next Adventure</h2>
           <p>
             From ancient cities to northern fjords — choose your dream
@@ -62,7 +62,7 @@
           </p>
         </article>
         <div class="cards">
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-delay="0" >
             <div class="cardbg3 cardbg"></div>
             <article class="card_disc">
               <h3>Norway</h3>
@@ -76,7 +76,7 @@
               </p>
             </article>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-delay="150">
             <div class="cardbg2 cardbg"></div>
             <article class="card_disc">
               <h3>Australia</h3>
@@ -89,7 +89,7 @@
               </p>
             </article>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-delay="300">
             <div class="cardbg1 cardbg"></div>
             <article class="card_disc">
               <h3>Georgia</h3>
@@ -108,24 +108,24 @@
       <section id="sec3">
         <div class="wrapper">
           <article>
-            <h2 class="sec3_title">Why Choose Us</h2>
-            <div class="reasons">
+            <h2 class="sec3_title" data-aos="fade-up" data-aos-delay="0">Why Choose Us</h2>
+            <div class="reasons" data-aos="fade-up" data-aos-delay="0">
               <div class="reason">
-                <img class="icon" src="icons/headset.webp" alt="" />
+                <img class="icon" src="icons/Headset.svg" alt="" />
                 <div class="text">
                   <h3>Trusted Partners</h3>
                   <p>We work only with verified tour providers.</p>
                 </div>
               </div>
               <div class="reason">
-                <img class="icon" src="icons/plane.webp" alt="" />
+                <img class="icon" src="icons/plane.svg" alt="" />
                 <div class="text">
                   <h3>Personalized Trips</h3>
                   <p>Designed around your interests and budget.</p>
                 </div>
               </div>
               <div class="reason">
-                <img class="icon" src="icons/heart-plus.webp" alt="" />
+                <img class="icon" src="icons/heart-plus.svg" alt="" />
                 <div class="text">
                   <h3>24/7 Support</h3>
                   <p>Travel worry-free; we're always here to help.</p>
@@ -133,7 +133,7 @@
               </div>
             </div>
           </article>
-          <div class="team"></div>
+          <div data-aos="fade-up" data-aos-delay="0" class="team"></div>
         </div>
         <p>
           We believe every journey should be seamless and unforgettable.Our team
@@ -147,7 +147,18 @@
       </section>
     </main>
 
-    <script src="main.js">
+    <script src="main.js"></script>
+
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 1000, // длительность анимации
+        once: true, // проигрывать один раз
+        offset: 100, // когда начинать анимацию
+      });
     </script>
   </body>
 </html>

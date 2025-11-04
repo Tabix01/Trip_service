@@ -21,16 +21,16 @@
       nav a {
         text-decoration: none;
         text-decoration: none;
-        color: #3A6F43;
+        color: #3a6f43;
         font-size: 1.5rem;
         font-weight: 400;
         transition: 200ms;
       }
       nav a.active {
-        color: #6B3F69;
+        color: #6b3f69;
       }
       nav a:hover {
-        color: #6B3F69;
+        color: #6b3f69;
         transition: 200ms;
       }
     </style>
@@ -38,30 +38,34 @@
   <body>
     <main>
       <header>
-  <nav class="desktop_nav">
-    <li><a href="index.html" class="navigation">Home</a></li>
-    <li><a href="About.html" class="navigation">About</a></li>
-    <li><a href="Partners.html" class="navigation active">Partners</a></li>
-    <li><a href="support.html" class="navigation">Support</a></li>
-  </nav>
+        <nav class="desktop_nav">
+          <li><a href="index.html" class="navigation">Home</a></li>
+          <li><a href="About.html" class="navigation">About</a></li>
+          <li>
+            <a href="Partners.html" class="navigation active">Partners</a>
+          </li>
+          <li><a href="support.html" class="navigation">Support</a></li>
+        </nav>
 
-  <div id="hamburger_icon"></div>
+        <div id="hamburger_icon"></div>
 
-  <nav id="mobile_menu">
-    <li><a href="index.html" class="navigation">Home</a></li>
-    <li><a href="About.html" class="navigation">About</a></li>
-    <li><a href="Partners.html" class="navigation active">Partners</a></li>
-    <li><a href="support.html" class="navigation">Support</a></li>
-  </nav>
-</header>
+        <nav id="mobile_menu">
+          <li><a href="index.html" class="navigation">Home</a></li>
+          <li><a href="About.html" class="navigation">About</a></li>
+          <li>
+            <a href="Partners.html" class="navigation active">Partners</a>
+          </li>
+          <li><a href="support.html" class="navigation">Support</a></li>
+        </nav>
+      </header>
       <section id="partners">
         <div class="partnersbg"></div>
         <h1>Partners</h1>
       </section>
       <article>
-        <div class="partners_title">
-          <h2>Trust is the glue of life</h2>
-          <p>
+        <div class="partners_title" >
+          <h2 data-aos="fade-up" data-aos-delay="150">Trust is the glue of life</h2>
+          <p data-aos="fade-up" data-aos-delay="150">
             At TTM, we believe that great travel experiences are built through
             strong partnerships. We collaborate with airlines, hotels, tour
             operators, and travel platforms around the world to bring you the
@@ -70,20 +74,20 @@
         </div>
       </article>
       <article class="iconsec">
-        <div class="plane icon_space">
+        <div class="plane icon_space" data-aos="fade-up" data-aos-delay="150">
           <img src="gallery/planee.svg" alt="" />
           <p>Affordable flight options to destinations across the globe</p>
         </div>
-        <div class="building icon_space">
+        <div class="building icon_space" data-aos="fade-up" data-aos-delay="150">
           <img src="gallery/building.svg" alt="" />
           <p>Trusted accommodation choices for every style and budget</p>
         </div>
-        <div class="excl icon_space">
+        <div class="excl icon_space" data-aos="fade-up" data-aos-delay="150">
           <img src="gallery/exclusive.svg" alt="" />
           <p>Exclusive experiences and tours you won't find anywhere else</p>
         </div>
       </article>
-      <div class="gitt">
+      <div class="gitt" data-aos="fade-up" data-aos-delay="150">
         <p>
           If you're interested in partnering with us, please reach out at
           https://github.com/Tabix01 — we're always open to new collaborations
@@ -91,7 +95,17 @@
         </p>
       </div>
     </main>
-    <script src="main.js">
+    <script src="main.js"></script>
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 1000, // длительность анимации
+        once: true, // проигрывать один раз
+        offset: 100, // когда начинать анимацию
+      });
     </script>
   </body>
 </html>

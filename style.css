@@ -544,5 +544,30 @@ nav a:hover {
   .partners_title {
     width: fit-content;
   }
-
+  #about {
+    text-align: center;
+  }
+  .about_title {
+    margin: 1rem;
+  }
+  .dream {
+    width: fit-content;
+    padding: 1rem;
+  }
+  .mission {
+    width: fit-content;
+    padding: 1rem;
+  }
+  #partners {
+    text-align: center;
+  }
+  .icon_space {
+    text-align: center;
+  }
+  #sec1 {
+    height: 90vh;
+  }
+  #sec1 .bg {
+    height: 90vh;
+  }
 }

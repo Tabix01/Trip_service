@@ -37,29 +37,29 @@
   </head>
   <body>
     <main>
-     <header>
-  <nav class="desktop_nav">
-    <li><a href="index.html" class="navigation">Home</a></li>
-    <li><a href="About.html" class="navigation active">About</a></li>
-    <li><a href="Partners.html" class="navigation">Partners</a></li>
-    <li><a href="support.html" class="navigation">Support</a></li>
-  </nav>
+      <header>
+        <nav class="desktop_nav">
+          <li><a href="index.html" class="navigation">Home</a></li>
+          <li><a href="About.html" class="navigation active">About</a></li>
+          <li><a href="Partners.html" class="navigation">Partners</a></li>
+          <li><a href="support.html" class="navigation">Support</a></li>
+        </nav>
 
-  <div id="hamburger_icon"></div>
+        <div id="hamburger_icon"></div>
 
-  <nav id="mobile_menu">
-    <li><a href="index.html" class="navigation">Home</a></li>
-    <li><a href="About.html" class="navigation active">About</a></li>
-    <li><a href="Partners.html" class="navigation">Partners</a></li>
-    <li><a href="support.html" class="navigation">Support</a></li>
-  </nav>
-</header>
+        <nav id="mobile_menu">
+          <li><a href="index.html" class="navigation">Home</a></li>
+          <li><a href="About.html" class="navigation active">About</a></li>
+          <li><a href="Partners.html" class="navigation">Partners</a></li>
+          <li><a href="support.html" class="navigation">Support</a></li>
+        </nav>
+      </header>
       <section id="about">
         <div class="aboutbg"></div>
-        <h1>About Us</h1>
+        <h1 data-aos="fade-up" data-aos-delay="150">About Us</h1>
 
         <article>
-          <div class="about_title">
+          <div class="about_title" data-aos="fade-up" data-aos-delay="150">
             <h2>Explore your dreams and hopes with us</h2>
             <p>
               Welcome to TTM — your personal gateway to the world. We believe
@@ -70,23 +70,42 @@
           </div>
         </article>
         <article>
-          <div class="about_text">
+          <div class="about_text" data-aos="fade-up" data-aos-delay="150">
             <div class="dream">
               <h3>Dream</h3>
-              <p>Whether you dream of wandering the streets of Paris, relaxing on a beach in Thailand, or exploring the mountains of Georgia — we've built a place where you can find it all in one click.</p>
+              <p>
+                Whether you dream of wandering the streets of Paris, relaxing on
+                a beach in Thailand, or exploring the mountains of Georgia —
+                we've built a place where you can find it all in one click.
+              </p>
             </div>
-            <div class="mission">
+            <div class="mission" data-aos="fade-up" data-aos-delay="150">
               <h3>Mission</h3>
-              <p>Our mission is to make exploring the world effortless. We combine intuitive design, up-to-date travel information, and honest recommendations to help you make confident choices.</p>
+              <p>
+                Our mission is to make exploring the world effortless. We
+                combine intuitive design, up-to-date travel information, and
+                honest recommendations to help you make confident choices.
+              </p>
             </div>
           </div>
         </article>
         <div class="aboutpic"></div>
-        <p style="text-align: center; margin-top: 2rem; font-size: 1.2rem;">At TTM, we don't just sell trips — we help you create memories.</p>
+        <p style="text-align: center; margin-top: 2rem; font-size: 1.2rem" data-aos="fade-up" data-aos-delay="150">
+          At TTM, we don't just sell trips — we help you create memories.
+        </p>
       </section>
-
     </main>
-   <script src="main.js">
+    <script src="main.js"></script>
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 1000, // длительность анимации
+        once: true, // проигрывать один раз
+        offset: 100, // когда начинать анимацию
+      });
     </script>
   </body>
 </html>
