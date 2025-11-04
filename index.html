@@ -21,14 +21,22 @@
   <body>
     <main>
       <header>
-        <div id="hamburger_icon"></div>
-        <nav id="hamburger_menu">
-          <li><a href="" class="navigation active">Home</a></li>
-          <li><a href="About.html" class="navigation">About</a></li>
-          <li><a href="Partners.html" class="navigation">Partners</a></li>
-          <li><a href="support.html" class="navigation">Support</a></li>
-        </nav>
-      </header>
+  <nav class="desktop_nav">
+    <li><a href="" class="navigation active">Home</a></li>
+    <li><a href="About.html" class="navigation">About</a></li>
+    <li><a href="Partners.html" class="navigation">Partners</a></li>
+    <li><a href="support.html" class="navigation">Support</a></li>
+  </nav>
+
+  <div id="hamburger_icon"></div>
+
+  <nav id="mobile_menu">
+    <li><a href="" class="navigation active">Home</a></li>
+    <li><a href="About.html" class="navigation">About</a></li>
+    <li><a href="Partners.html" class="navigation">Partners</a></li>
+    <li><a href="support.html" class="navigation">Support</a></li>
+  </nav>
+</header>
       <section id="sec1">
         <div class="bg"></div>
         <h1>EXPLORE</h1>
@@ -139,13 +147,7 @@
       </section>
     </main>
 
-    <script>
-      const icon = document.getElementById("hamburger_icon");
-      const menu = document.getElementById("hamburger_menu");
-
-      icon.addEventListener("click", () => {
-        menu.classList.toggle("active");
-      });
+    <script src="main.js">
     </script>
   </body>
 </html>

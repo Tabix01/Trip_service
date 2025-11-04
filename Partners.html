@@ -38,14 +38,22 @@
   <body>
     <main>
       <header>
-        <div id="hamburger_icon"></div>
-        <nav id="hamburger_menu">
-          <li><a href="index.html" class="navigation active">Home</a></li>
-          <li><a href="About.html" class="navigation">About</a></li>
-          <li><a href="Partners.html" class="navigation">Partners</a></li>
-          <li><a href="support.html" class="navigation">Support</a></li>
-        </nav>
-      </header>
+  <nav class="desktop_nav">
+    <li><a href="index.html" class="navigation">Home</a></li>
+    <li><a href="About.html" class="navigation">About</a></li>
+    <li><a href="Partners.html" class="navigation active">Partners</a></li>
+    <li><a href="support.html" class="navigation">Support</a></li>
+  </nav>
+
+  <div id="hamburger_icon"></div>
+
+  <nav id="mobile_menu">
+    <li><a href="index.html" class="navigation">Home</a></li>
+    <li><a href="About.html" class="navigation">About</a></li>
+    <li><a href="Partners.html" class="navigation active">Partners</a></li>
+    <li><a href="support.html" class="navigation">Support</a></li>
+  </nav>
+</header>
       <section id="partners">
         <div class="partnersbg"></div>
         <h1>Partners</h1>
@@ -83,13 +91,7 @@
         </p>
       </div>
     </main>
-    <script>
-      const icon = document.getElementById("hamburger_icon");
-      const menu = document.getElementById("hamburger_menu");
-
-      icon.addEventListener("click", () => {
-        menu.classList.toggle("active");
-      });
+    <script src="main.js">
     </script>
   </body>
 </html>
