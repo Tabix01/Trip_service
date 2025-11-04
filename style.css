@@ -400,6 +400,18 @@ nav a:hover {
   html {
     font-size: 13px;
   }
+  .gitt {
+    width: fit-content;
+  }
+}
+@media (max-width: 840px){
+   nav {
+    flex-direction: column;
+    width: fit-content;
+  }
+  .gitt {
+    width: fit-content;
+  }
 }
 @media (max-width: 600px) {
   html {
@@ -435,5 +447,26 @@ nav a:hover {
   .team {
     width: 100%;
     height: 25vh;
+  }
+  .about_text {
+    flex-direction: column;
+    padding: .5rem;
+  }
+  .about_title {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: fit-content;
+    padding: .5rem;
+  }
+  .reasons {
+    flex-direction: column;
+  }
+  .iconsec {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .gitt {
+    width: fit-content;
   }
 }
