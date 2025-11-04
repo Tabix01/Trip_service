@@ -21,7 +21,8 @@
   <body>
     <main>
       <header>
-        <nav>
+        <div id="hamburger_icon"></div>
+        <nav id="hamburger_menu">
           <li><a href="" class="navigation active">Home</a></li>
           <li><a href="About.html" class="navigation">About</a></li>
           <li><a href="Partners.html" class="navigation">Partners</a></li>
@@ -134,10 +135,17 @@
         </p>
       </section>
       <section id="sec4">
-        <div class="gallery">
-         
-        </div>
+        <div class="gallery"></div>
       </section>
     </main>
+
+    <script>
+      const icon = document.getElementById("hamburger_icon");
+      const menu = document.getElementById("hamburger_menu");
+
+      icon.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

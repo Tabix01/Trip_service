@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburger Menu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+    }
+
+    /* Иконка гамбургера */
+    #hamburger_icon {
+      background-image: url('menu.png');
+      background-position: center;
+      background-size: cover;
+      width: 3rem;
+      height: 3rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      z-index: 1001;
+    }
+
+    /* Меню */
+    #hamburger {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      background-color: azure;
+      width: 70%;
+      height: 100vh;
+      transition: left 0.3s ease;
+      z-index: 1000;
+      padding-top: 4rem;
+    }
+
+    #hamburger.active {
+      left: 0;
+    }
+
+    nav {
+      list-style: none;
+      padding-left: 2rem;
+    }
+
+    nav li {
+      margin: 1.5rem 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: teal;
+    }
+  </style>
+</head>
+<body>
+  <div id="hamburger_icon"></div>
+
+  <div id="hamburger">
+    <nav>
+      <li><a href="" class="navigation active">Home</a></li>
+      <li><a href="About.html" class="navigation">About</a></li>
+      <li><a href="Partners.html" class="navigation">Partners</a></li>
+      <li><a href="support.html" class="navigation">Support</a></li>
+    </nav>
+  </div>
+
+  <script>
+    const menu = document.getElementById('hamburger');
+    const icon = document.getElementById('hamburger_icon');
+
+    icon.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
